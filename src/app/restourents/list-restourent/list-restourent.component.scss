@@ -41,6 +41,7 @@
     box-shadow: 0 0 15px rgba(0,0,0,0.4);
     margin: 10px 20px;
     justify-content: center;
+    border-radius: 5px;
 }
 
 .example-card:hover{
@@ -60,10 +61,11 @@ h3{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+
 }
 button{
     padding: 5px;
-    // margin: 5px;
+    margin: 5px;
 }
 h1{
     margin-left: 5%;
