@@ -1,0 +1,22 @@
+<div class="body">
+  <div class="container">
+  <h1>Available Restaurents</h1>
+    <div class="row">
+      <div class="cards" *ngFor="let rest of restourentList">
+        <mat-card class="example-card">
+          <img mat-card-image src={{rest.image}}>
+          <mat-card-content>
+            <h3>{{ rest.name}}</h3>
+            <p>
+              {{rest.foodItems}}
+            </p>
+          </mat-card-content>
+          <mat-card-actions class="btn">
+            <button mat-button>Visit</button>
+            <button mat-button>Share</button>
+          </mat-card-actions>
+        </mat-card>
+      </div>
+    </div>
+  </div>
+</div>

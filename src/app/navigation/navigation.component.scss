@@ -1,0 +1,23 @@
+.navbar{
+    background-color:black;
+    color: whitesmoke;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom:1px solid white;
+}
+.nav-items{
+    font-weight: lighter;
+    font-size:medium;
+    display:flex;
+    justify-content: space-between;
+}
+.mr-5{
+    margin-right: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
