@@ -86,4 +86,7 @@ export class RestourentsService {
   getRestourentsList(){
     return this.restaurent;
   }
+  addRestaurent(rest){
+    this.restaurent.push(rest);
+  }
 }

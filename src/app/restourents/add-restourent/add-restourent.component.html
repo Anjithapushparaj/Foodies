@@ -2,24 +2,27 @@
     <div class="row">
         <div class="col-md-2">
             <div class="field-container">
-                <div>Restourent Name</div>
-                <input type="text">
+                <div>Restaurent Name</div>
+                <input type="text" [(ngModel)]="restaurentName">
             </div>
             <div class="field-container">
                 <div>Location</div>
-                <input type="text">
+                <input type="text" [(ngModel)]="location">
             </div>
             <div class="field-container">
                 <div>Food Items</div>
-                <input type="text">
+                <input type="text" [(ngModel)]="foodItems">
             </div>
             <div class="field-container">
-                <div>Price</div>
-                <input type="text">
+                <div>Upload Image</div>
+                <input type="file" (change)="onFileSelected($event)">
+               <a href="">Upload</a>
+
             </div>
+
         </div>
     </div>
     <div class="btn">
-        <button type="button">Submit</button>
+        <button type="button" (click)="addNewRestaurent()">Submit</button>
     </div>
 </div>
