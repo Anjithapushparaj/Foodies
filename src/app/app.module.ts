@@ -10,7 +10,7 @@ import { HeaderComponent } from './header/header.component';
 import { RestourentsModule } from './restourents/restourents.module';
 import { FoodItemsModule } from './food-items/food-items.module';
 import { FoodItemsComponent } from './food-items/food-items.component';
-
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,7 +25,8 @@ import { FoodItemsComponent } from './food-items/food-items.component';
     MatToolbarModule,
     RestourentsModule,
     FoodItemsModule,
-    FormsModule 
+    FormsModule ,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

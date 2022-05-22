@@ -18,7 +18,10 @@ export class ListRestourentComponent implements OnInit {
 
   getRestourentDetails(){
     {
-      this.restourentList = this.restService.getRestourentsList();
+    this.restService.getRestourentsList().subscribe((restList)=>{
+      this.restourentList=restList;
+      console.log(this.restourentList)
+      });
     }
   }
 

@@ -1,4 +1,6 @@
 import { Injectable } from '@angular/core';
+import { map, Observable } from 'rxjs';
+import {HttpClient, HttpClientModule} from '@angular/common/http'
 
 @Injectable({
   providedIn: 'root'
@@ -81,12 +83,19 @@ export class RestourentsService {
      
   ];
 
-  constructor() { }
+  constructor(private httpClient:HttpClient) { }
   
-  getRestourentsList(){
-    return this.restaurent;
+  getRestourentsList():Observable<any[]>{
+    return this.httpClient.get<any[]>('http://localhost:5200/restaurents') ;
   }
   addRestaurent(rest){
     this.restaurent.push(rest);
+  }
+  getRestourent(value):Observable<any[]>{
+    return this.httpClient.get<any[]>(`http://localhost:5200/restaurents/restaurentName/${value}`)
+    // .pipe(map((d)=> {
+    //   console.log("return data",d);
+    //   return d;
+    // })) ;
   }
 }

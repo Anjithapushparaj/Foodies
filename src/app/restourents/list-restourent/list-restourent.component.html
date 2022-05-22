@@ -4,11 +4,12 @@
     <div class="row">
       <div class="cards" *ngFor="let rest of restourentList">
         <mat-card class="example-card">
-          <img mat-card-image src={{rest.image}}>
+          <img mat-card-image src={{rest.restaurentImage}}>
           <mat-card-content>
-            <h3>{{ rest.name}}</h3>
+            <h3>{{ rest.restaurentName}}</h3>
+            <h4>{{rest.location}}</h4>
             <p>
-              {{rest.foodItems}}
+              {{rest.foodOptions}}
             </p>
             <mat-card-actions class="btn">
               <button mat-button>Visit</button>

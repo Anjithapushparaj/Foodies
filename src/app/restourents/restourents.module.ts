@@ -5,6 +5,8 @@ import { AddRestourentComponent } from './add-restourent/add-restourent.componen
 import { ListRestourentComponent } from './list-restourent/list-restourent.component';
 import {MatCardModule} from '@angular/material/card';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+
 
 
 @NgModule({
@@ -16,7 +18,9 @@ import { FormsModule } from '@angular/forms';
   imports: [
     CommonModule,
     MatCardModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ]
+  
 })
 export class RestourentsModule { }
